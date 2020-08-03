@@ -1,0 +1,96 @@
+:root {
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --body-font-size: 0.9rem;
+  --small-font-size: 0.7rem; }
+
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; }
+
+:root {
+  --font-size: 1.2rem; }
+
+:root {
+  --display-color: hsl(40, 70%, 65%);
+  --calculator-bg-color: hsl(244, 50%, 50%);
+  --buttons-bg-color: hsl(244, 100%, 10%);
+  --buttons-color: hsl(0, 0%, 100%); }
+
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: lato, sans-serif;
+  font-size: var(--body-font-size); }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0; }
+
+h1 {
+  font-size: var(--h1-font-size); }
+
+h2 {
+  font-size: var(--h2-font-size); }
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 75% auto;
+  row-gap: 0.5rem; }
+
+.body {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; }
+
+.title {
+  font-size: var(--font-size);
+  display: block;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 1.2rem;
+  border-radius: 1.5rem; }
+  @media screen and (min-width: 320px) {
+    .title {
+      --font-size: 1.7rem; } }
+  @media screen and (min-width: 768px) {
+    .title {
+      --font-size: 2.5em; } }
+  @media screen and (min-width: 1025px) {
+    .title {
+      width: 50vw; } }
