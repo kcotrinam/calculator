@@ -2,16 +2,30 @@
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-rows: 15% 75% auto;
-  row-gap: 0.5rem;
+  grid-template-rows: 10% 80% 10%;
+
+  @include from(large) {
+    grid-template-rows: 15% 75% auto;
+  }
 }
 
-.body {
-  width: 80%;
+.header {
+  width: 100%;
   height: 100%;
-  margin: auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &__title {
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+.calculator {
+  background: steelblue;
+}
+
+.footer {
+  background: tan;
 }
