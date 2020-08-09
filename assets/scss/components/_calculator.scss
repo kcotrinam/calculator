@@ -1,0 +1,55 @@
+.calculator {
+  background-color: var(--calculator-bg-color);
+  padding: 1rem 0;
+  border-radius: 0.8rem;
+
+  &__display {
+    width: 80%;
+    padding: 0.2rem;
+    margin: 0 auto;
+    border-radius: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: steelblue;
+  }
+
+  &__previous-number {
+    padding: 0.5rem 0.75rem;
+    font-size: 1.2rem;
+  }
+
+  &__current-number {
+    font-size: 2rem;
+    padding: 0.5rem 0.75rem;
+    font-weight: bold;
+  }
+
+  &__panel-buttons {
+    width: 80%;
+    padding: 0.2rem;
+    margin: 0 auto;
+    margin-top: 0.25rem;
+  }
+}
+
+.btn {
+  background: var(--buttons-bg-color);
+  color: var(--buttons-color);
+  width: 75%;
+  height: 75%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px 2px;
+  cursor: pointer;
+
+  @include from(medium) {
+    font-size: calc(var(--font-size) * 1.8);
+  }
+}

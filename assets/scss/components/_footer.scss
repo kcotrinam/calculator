@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+  &__img {
+    background: white;
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+  }
+}
